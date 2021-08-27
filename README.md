@@ -1,6 +1,6 @@
 <p align="center"><img alt="Undercraft Logo" src="https://user-images.githubusercontent.com/61522145/131120190-0c32c77e-2e5e-498f-80a6-090daec75531.png"></p>
 
-<p align="center"><img alt="Undercraft Launcher" src="https://user-images.githubusercontent.com/61522145/131120080-74c9c692-38aa-45e4-b6c3-4e35a9f3aa94.png" width="800px"></p>
+<p align="center"><img alt="Undercraft Launcher" src="https://user-images.githubusercontent.com/61522145/131123014-6aeb6dd4-f69a-43eb-9539-6d0b3ddb8fce.png" width="800px"></p>
 
   
 [<p align="center"><img src="https://img.shields.io/discord/762253189525012501?color=%235865F2&label=Discord&style=for-the-badge">](https://discord.gg/FePaQ7v)
