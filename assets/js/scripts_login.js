@@ -50,11 +50,11 @@ function login() {
         axios(login)
             .then(function (response) {
 
+                console.log(response);
+
                 if (response.data != "error_password") {
 
                     console.log("%c[Launcher]" + "%c [Connexion]" + "%c Connexion successful!", "color: blue; font-weight: 1000", "color: black; font-weight: 700", "color: black; font-weight: 100");
-
-                    console.log(response);
 
                     localStorage.setItem("password", SHA256(passInput.value));
                     localStorage.setItem("username", response.data.pseudo);
@@ -65,7 +65,7 @@ function login() {
 
                 } else if (response.data == "error_password") {
 
-                    console.log("%c[Launcher]" + "%c [Connexion]" + "%c Cannot connect: " + error, "color: blue; font-weight: 1000", "color: black; font-weight: 700", "color: black; font-weight: 100");
+                    console.log("%c[Launcher]" + "%c [Connexion]" + "%c Cannot connect: " + response, "color: blue; font-weight: 1000", "color: black; font-weight: 700", "color: black; font-weight: 100");
 
                     document.getElementById("error-modal").style.display = "block"
                     document.getElementById("error-text").innerHTML = "Identifiants invalides !"
