@@ -172,13 +172,13 @@ async function index() { // Si le Launcher est à Jour
     if (localStorage.getItem("password") && localStorage.getItem("username")) {
 
         var loginToken = {
-            url: "https://www.undercrafts.eu/auth/getDataLauncher",
+            url: "https://www.undercrafts.eu/auth/getDataLauncher?username=" + localStorage.getItem("username") + "&password=" + localStorage.getItem("password"),
             method: "GET",
-            timeout: 0,
-            data: {
-                username: localStorage.getItem("username"),
-                password: localStorage.getItem("password")
-            }
+            // timeout: 0,
+            // data: {
+            //     username: ,
+            //     password: 
+            // }
         }
 
         axios(loginToken)
@@ -186,22 +186,21 @@ async function index() { // Si le Launcher est à Jour
 
                 if (response.data != "error_password") {
 
-                console.log("%c[Launcher]" + "%c [Connexion]" + "%c Connexion successful", "color: blue; font-weight: 1000", "color: black; font-weight: 700", "color: black; font-weight: 100");
+                    console.log("%c[Launcher]" + "%c [Connexion]" + "%c Connexion successful", "color: blue; font-weight: 1000", "color: black; font-weight: 700", "color: black; font-weight: 100");
 
-                console.log(response);
+                    localStorage.setItem("password", localStorage.getItem("password"));
+                    localStorage.setItem("username", response.data.pseudo);
+                    localStorage.setItem("email", response.data.email);
+                    localStorage.setItem("uuid", response.data.uuid);
 
-                // localStorage.setItem("password", response.data.access_token);
-                localStorage.setItem("username", response.data.pseudo);
-                localStorage.setItem("email", response.data.email);
-                localStorage.setItem("uuid", response.data.uuid);
+                    ipc.send("login")
 
-                ipc.send("login")
+                } else if (response.data == "error_password") {
 
-            } else if (response.data != "error_password") {
-                console.log("%c[Launcher]" + "%c [Connexion]" + "%c Cannot connect: " + error, "color: blue; font-weight: 1000", "color: black; font-weight: 700", "color: black; font-weight: 100");
-                
-                ipc.send("noLogged")
-            }
+                    console.log("%c[Launcher]" + "%c [Connexion]" + "%c Cannot connect: " + error, "color: blue; font-weight: 1000", "color: black; font-weight: 700", "color: black; font-weight: 100");
+
+                    ipc.send("noLogged")
+                }
 
             })
             .catch(function (error) {
