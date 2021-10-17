@@ -15,7 +15,7 @@
 
 ## <span id="platforms">Platform compatibility • Compatibilité des plateformes</span>
 
-| OS (platform) • Système d'exploitation (plateforme) | Supported? • Supporté ?            | Minimum version supported • Version minimale supportée  |
+| OS (platform) • Système d'exploitation (plateforme) | Supported? • Supporté ?             | Minimum version supported • Version minimale supportée  |
 |-----------------------------------------------------|-------------------------------------|---------------------------------------------------------|
 | Windows (win32)                                     | Yes • Oui                           | Windows 7 (Windows NT 6.1)                              |
 | macOS (Darwin)                                      | Yes • Oui                           | macOS El Capitan (10.11)                                |
@@ -24,6 +24,7 @@
 
 
 The code for this launcher may not be up to date. You can request the latest version at https://undercrafts.eu.
+
 Le code de ce Launcher n'est peut être pas à jour. Vous pouvez demander la dernière version sur https://endercrafts.eu.
 
 ---
