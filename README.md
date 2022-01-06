@@ -32,7 +32,7 @@ Le code de ce Launcher n'est peut être pas à jour. Vous pouvez demander la der
 ## **[EN]** Minecraft Launcher for the modded server "Undercraft" (French server)
 
 ### Features :
-* <a href="https://mineweb.org/" target="_blank">MineWeb Auth</a> (French Website
+* <a href="https://mineweb.org/" target="_blank">MineWeb Auth</a> (French Website)
 * Minecraft Forge 1.7.10
 * Bootstrap
 * Java x64 autodownloading (for Windows)
