@@ -1,3 +1,8 @@
+<div align="center">
+  <b>⚠️ This project is outdated. Some new Launchers are coming in a few months! ⚠️</b><br>
+  <b>⚠️ Ce projet n'est plus maintenu. De nouveaux Launchers arrivent dans quelques mois ! ⚠️</b>
+</div><br>
+
 <p align="center"><img alt="Undercraft Logo" src="https://user-images.githubusercontent.com/61522145/131120190-0c32c77e-2e5e-498f-80a6-090daec75531.png"></p>
 
 <p align="center"><img alt="Undercraft Launcher" src="https://user-images.githubusercontent.com/61522145/131123014-6aeb6dd4-f69a-43eb-9539-6d0b3ddb8fce.png" width="800px"></p>
